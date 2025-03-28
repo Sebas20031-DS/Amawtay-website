@@ -14,26 +14,46 @@
 
 /* Estilos comunes para el modo claro */
 body {
-  background-color: #f8f8f8;
+  background-color: var(--color-amw-white);
   color: #000000;
 }
 
 /* Estilos para el modo oscuro */
 body.dark {
-  background-color: #050835;
-  /* Fondo oscuro */
-  color: #f9f9f9;
-  /* Texto claro */
+  background-color: var(--color-amw-blue);
+  color: var(--color-amw-white);
 }
 
 @layer components {
-  .btn-primary {
-    @apply py-2 px-4 rounded-md;
-    background-image: linear-gradient(to right, #9f7aea, #6b46c1);
+  .btn-primary-dark {
+    @apply py-2 px-2 rounded-md;
+    background-image: linear-gradient(to right, #6b46c1, #4c1d95);
   }
 
-  .btn-secondary {
-    @apply py-2 px-4 rounded-md;
-    background-image: linear-gradient(to right, #7fbbf5, #3b82f6);
+  .btn-primary-light {
+    @apply py-2 px-2 rounded-md;
+    background-image: linear-gradient(to right, #3b82f6, #1e40af);
+  }
+
+  /* Botón secundario oscuro (más suave) */
+  .btn-secondary-dark {
+    @apply py-2 px-2 rounded-md;
+    background-image: linear-gradient(to right, #2d2f45, #3b3f5e);
+    color: #d1d5db;
+  }
+
+  /* Botón secundario claro (más suave) */
+  .btn-secondary-light {
+    @apply py-2 px-2 rounded-md;
+    background-image: linear-gradient(to right, #e4e4e7, #d1d5db);
+    color: #1f2937;
+  }
+
+  .bg-dark {
+    background-color: var(--color-amw-dark);
+  }
+
+  .bg-light {
+    background-color: var(--color-amw-sky);
   }
 }

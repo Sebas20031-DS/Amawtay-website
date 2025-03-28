@@ -3,7 +3,13 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
-export default function SignUp() {
+export default function SignUp({
+  children,
+  href,
+}: {
+  children: React.ReactNode;
+  href: string;
+}) {
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -15,12 +21,12 @@ export default function SignUp() {
 
   return (
     <a
-      href="#"
+      href={href}
       className={
-        resolvedTheme === "dark" ? "text-neutral-50" : "text-neutral-900"
+        resolvedTheme === "dark" ? "btn-secondary-dark" : "btn-secondary-light"
       }
     >
-      Registrarse
+      {children}
     </a>
   );
 }

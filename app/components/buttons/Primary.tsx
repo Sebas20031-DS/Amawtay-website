@@ -22,7 +22,9 @@ export default function Primary({
   return (
     <a
       href={href}
-      className={resolvedTheme === "dark" ? "btn-primary" : "btn-secondary"}
+      className={
+        resolvedTheme === "dark" ? "btn-primary-dark" : "btn-primary-light"
+      }
     >
       {children}
     </a>

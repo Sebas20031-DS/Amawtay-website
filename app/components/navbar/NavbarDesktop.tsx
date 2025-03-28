@@ -1,21 +1,22 @@
 import Link from "next/link";
 import { navItems } from "@/app/constants";
 import Primary from "../buttons/Primary";
+import Secondary from "../buttons/Secondary";
 
 export default function NavbarDesktop() {
   return (
-    <div className="hidden lg:flex ml-14 space-x-12 items-center justify-center">
-      <ul className="hidden lg:flex mt-2  space-x-12">
+    <div className="hidden lg:flex ml-14 space-x-10 items-center justify-center">
+      <ul className="hidden lg:flex  space-x-10">
         {navItems.map((item, index) => (
           <li key={index}>
             <Link href={item.href}>{item.label}</Link>
           </li>
         ))}
       </ul>
-      <a href="#" className="py-2 px-3 border rounded-md">
-        Registrarse
-      </a>
-      <Primary href="#">Iniciar Sección</Primary>
+      <div className="hidden lg:flex space-x-6">
+        <Secondary href="#">Registrarse</Secondary>
+        <Primary href="#">Iniciar Sección</Primary>
+      </div>
     </div>
   );
 }

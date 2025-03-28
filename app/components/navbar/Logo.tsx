@@ -14,7 +14,7 @@ export default function Logo() {
     setMounted(true);
   }, []);
 
-  if (!mounted) return <div className="h-10 w-1"></div>;
+  if (!mounted) return <div className="h-9 w-9 mr-2"></div>;
 
   return (
     <Image
