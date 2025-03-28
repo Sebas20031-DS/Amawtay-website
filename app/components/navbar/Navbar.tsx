@@ -1,18 +1,23 @@
 import NavbarDesktop from "./NavbarDesktop";
 import ThemeSwitch from "./ThemeSwitch";
 import NavbarMobileWrapper from "./NavbarMobileWrapper"; // Nuevo wrapper
+import Logo from "./Logo";
 
 export default function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 py-3.5 backdrop-blur-lg">
+    <nav
+      className="sticky  z-50 py-3.5 backdrop-blur-lg border-b
+"
+    >
       <div className="container mx-auto px-4 relative text-sm">
         <div className="flex justify-between items-center">
           {/* Logo */}
+          <Logo />
           <div className="flex items-center">
             <span className="text-xl tracking-tight">Amawtay</span>
           </div>
 
-          {/* Menú en pantallas grandes (Servidor) */}
+          {/* Menú en pantallas grandes (Servidor)*/}
           <NavbarDesktop />
 
           {/* Cambio de tema y menú móvil (Solo lo necesario en el cliente) */}

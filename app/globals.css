@@ -25,3 +25,15 @@ body.dark {
   color: #f9f9f9;
   /* Texto claro */
 }
+
+@layer components {
+  .btn-primary {
+    @apply py-2 px-4 rounded-md;
+    background-image: linear-gradient(to right, #9f7aea, #6b46c1);
+  }
+
+  .btn-secondary {
+    @apply py-2 px-4 rounded-md;
+    background-image: linear-gradient(to right, #7fbbf5, #3b82f6);
+  }
+}
