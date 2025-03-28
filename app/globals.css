@@ -1,26 +1,27 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Paleta de color Amawtay */
+@theme {
+  --color-amw-blue: #050835;
+  --color-amw-white: #f9f9f9;
+  --color-amw-red: #8d283c;
+  --color-amw-lightblue: #3b63a8;
+  --color-amw-dark: #333333;
+  --color-amw-lightgray: #f0ebe5;
+  --color-amw-gray: #dbd6ce;
+  --color-amw-sky: #a8cde5;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Estilos comunes para el modo claro */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8f8f8;
+  color: #000000;
+}
+
+/* Estilos para el modo oscuro */
+body.dark {
+  background-color: #050835;
+  /* Fondo oscuro */
+  color: #f9f9f9;
+  /* Texto claro */
 }
