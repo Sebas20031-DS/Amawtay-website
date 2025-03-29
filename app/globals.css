@@ -56,4 +56,8 @@ body.dark {
   .bg-light {
     background-color: var(--color-amw-sky);
   }
+
+  .hover-primary {
+    @apply hover:bg-gray-500 transition-colors duration-300;
+  }
 }

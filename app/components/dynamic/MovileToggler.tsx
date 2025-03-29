@@ -3,8 +3,8 @@
 import { useState } from "react";
 import { X, Menu } from "lucide-react";
 import { useTheme } from "next-themes";
-import Primary from "./Primary";
-import Secondary from "./Secondary";
+import PrimaryLink from "./PrimaryLink";
+import SecondaryLink from "./SecondaryLink";
 
 import React from "react";
 
@@ -33,8 +33,8 @@ export default function MovileToggler({
         >
           {children}
           <div className="grid grid-cols-2 gap-4 p-5">
-            <Secondary href="#">Registrarse</Secondary>
-            <Primary href="#">Iniciar Sección</Primary>
+            <SecondaryLink href="#">Registrarse</SecondaryLink>
+            <PrimaryLink href="#">Iniciar Sección</PrimaryLink>
           </div>
         </div>
       )}

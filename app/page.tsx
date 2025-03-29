@@ -1,3 +1,9 @@
+import StartPage from "./components/startpage/StartPage";
+
 export default function Home() {
-  return <></>;
+  return (
+    <main>
+      <StartPage />
+    </main>
+  );
 }

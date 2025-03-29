@@ -2,8 +2,9 @@
 
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
-export default function SignUp({
+export default function PrimaryLink({
   children,
   href,
 }: {
@@ -17,16 +18,16 @@ export default function SignUp({
     setMounted(true);
   }, []);
 
-  if (!mounted) return <div className="py-2 px-3 border rounded-md"></div>;
+  if (!mounted) return <div className="py-2 px-4 border rounded-md"></div>;
 
   return (
-    <a
+    <Link
       href={href}
       className={
-        resolvedTheme === "dark" ? "btn-secondary-dark" : "btn-secondary-light"
+        resolvedTheme === "dark" ? "btn-primary-dark" : "btn-primary-light"
       }
     >
       {children}
-    </a>
+    </Link>
   );
 }
