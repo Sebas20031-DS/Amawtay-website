@@ -1,9 +1,9 @@
-import StartPage from "@/app/startpage/StartPage";
+import AboutUsPage from "./AboutUsPage";
 
 export default function Home() {
   return (
     <main>
-      <StartPage />
+      <AboutUsPage />
     </main>
   );
 }

@@ -23,9 +23,13 @@ export default function SecondaryLink({
   return (
     <Link
       href={href}
-      className={
-        resolvedTheme === "dark" ? "btn-secondary-dark" : "btn-secondary-light"
-      }
+      className={`
+        grid justify-center items-center  ${
+          resolvedTheme === "dark"
+            ? "btn-secondary-dark"
+            : "btn-secondary-light"
+        }
+      `}
     >
       {children}
     </Link>

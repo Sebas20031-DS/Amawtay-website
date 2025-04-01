@@ -10,8 +10,12 @@ import React from "react";
 
 export default function MovileToggler({
   children,
+  style,
+  styleBtn,
 }: {
   children: React.ReactNode;
+  style: string;
+  styleBtn: string;
 }) {
   // Estado para manejar la apertura/cierre del menú móvil
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,12 +31,12 @@ export default function MovileToggler({
       {/* Menú móvil que aparece cuando isMenuOpen es verdadero */}
       {isMenuOpen && (
         <div
-          className={`fixed right-0 z-20 w-full flex flex-col items-center justify-center py-2 mt-5 ${
+          className={`${style}${
             resolvedTheme === "dark" ? "bg-dark" : "bg-light"
           }`}
         >
           {children}
-          <div className="grid grid-cols-2 gap-4 p-5">
+          <div className={styleBtn}>
             <SecondaryLink href="#">Registrarse</SecondaryLink>
             <PrimaryLink href="#">Iniciar Sección</PrimaryLink>
           </div>

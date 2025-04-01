@@ -1,7 +1,7 @@
 import GradientWord from "./GradientWord";
-import PrimaryLink from "../dynamic/PrimaryLink";
-import SecondaryLink from "../dynamic/SecondaryLink";
-import ShadowImg from "./ShadowImg";
+import PrimaryLink from "@/app/components/dynamic/PrimaryLink";
+import SecondaryLink from "@/app/components/dynamic/SecondaryLink";
+import ShadowImg from "../components/dynamic/ShadowImg";
 import img from "@/public/imgs/ejp_img_light.jpg";
 
 export default function StartPage() {
@@ -24,12 +24,21 @@ export default function StartPage() {
         <PrimaryLink href="#">Inscribete</PrimaryLink>
         <SecondaryLink href="#">Conoce más</SecondaryLink>
       </div>
-      <div className="flex mt-5 justify-center m-4">
-        <ShadowImg src={img} />
-        <ShadowImg src={img} />
-        <ShadowImg src={img} />
+      <div className="flex mt-5 justify-center m-10 lg:m-16">
+        <ShadowImg
+          src={img}
+          imgstyle="rounded-lg w-1/3 border shadow-lg mx-2"
+        />
+        <ShadowImg
+          src={img}
+          imgstyle="rounded-lg w-1/3 border shadow-lg mx-2"
+        />
+        <ShadowImg
+          src={img}
+          imgstyle="rounded-lg w-1/3 border shadow-lg mx-2"
+        />
       </div>
-      <div className="flex flex-row items-center justify-center mt-6 mb-6 lg:mt-10 space-x-7">
+      <div className="flex flex-row items-center justify-center mt-6 mx-8 lg:mt-10 space-x-7 lg:m-16">
         <div className="p-3 rounded-lg shadow-lg text-center">
           <h3 className="text-4xl lg:text-6xl tracking-wide">
             <GradientWord>Misión</GradientWord>

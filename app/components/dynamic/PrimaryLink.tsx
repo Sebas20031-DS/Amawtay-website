@@ -23,9 +23,10 @@ export default function PrimaryLink({
   return (
     <Link
       href={href}
-      className={
+      className={` grid justify-center items-center ${
         resolvedTheme === "dark" ? "btn-primary-dark" : "btn-primary-light"
       }
+      `}
     >
       {children}
     </Link>
