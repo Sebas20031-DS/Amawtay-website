@@ -3,8 +3,8 @@
 import { useState } from "react";
 import { X, Menu } from "lucide-react";
 import { useTheme } from "next-themes";
-import PrimaryLink from "./PrimaryLink";
-import SecondaryLink from "./SecondaryLink";
+import GradientLink1 from "./GradientLink1";
+import GradientLink2 from "./GradientLink2";
 
 import React from "react";
 
@@ -37,8 +37,22 @@ export default function MovileToggler({
         >
           {children}
           <div className={styleBtn}>
-            <SecondaryLink href="#">Registrarse</SecondaryLink>
-            <PrimaryLink href="#">Iniciar Sección</PrimaryLink>
+            <GradientLink2
+              href="#"
+              className="grid justify-center items-center"
+              darkcolor="link-secondary-dark"
+              lightcolor="link-secondary-light"
+            >
+              Registrarse
+            </GradientLink2>
+            <GradientLink1
+              href="#"
+              className="grid justify-center items-center"
+              darkcolor="link-primary-dark"
+              lightcolor="link-primary-light"
+            >
+              Iniciar Sección
+            </GradientLink1>
           </div>
         </div>
       )}

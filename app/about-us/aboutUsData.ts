@@ -1,6 +1,6 @@
-[
+const aboutUsData = [
   {
-    "imagen": "img_miembros/Darwin.avif",
+    "imagen": "/img_miembros/Darwin.avif",
     "nombre": "Darwin Reyes Solís",
     "etiqueta": "PhD.",
     "puestos": [
@@ -35,7 +35,7 @@
   },
 
   {
-    "imagen": "img_miembros/William C.avif",
+    "imagen": "/img_miembros/William C.avif",
     "nombre": "William Cárdenas",
     "etiqueta": "PhD.",
     "puestos": [
@@ -70,7 +70,7 @@
   },
 
   {
-    "imagen": "img_miembros/Erika.avif",
+    "imagen": "/img_miembros/Erika.avif",
     "nombre": "Erika Escobar-Iza",
     "etiqueta": "MSc.",
     "puestos": [
@@ -97,7 +97,7 @@
   },
 
   {
-    "imagen": "img_miembros/Rafael.avif",
+    "imagen": "/img_miembros/Rafael.avif",
     "nombre": "Rafael Chávez-Lloay",
     "etiqueta": "Lic.",
     "puestos": [
@@ -120,7 +120,7 @@
   },
 
   {
-    "imagen": "img_miembros/William A.avif",
+    "imagen": "/img_miembros/William A.avif",
     "nombre": "Willian Acosta-Acosta",
     "etiqueta": [],
     "puestos": [],
@@ -132,4 +132,6 @@
     ],
     "correo": "wiliamacosta23@gmail.com"
   }
-]
+];
+
+export default aboutUsData;

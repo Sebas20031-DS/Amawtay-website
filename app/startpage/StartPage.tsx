@@ -1,6 +1,6 @@
 import GradientWord from "./GradientWord";
-import PrimaryLink from "@/app/components/dynamic/PrimaryLink";
-import SecondaryLink from "@/app/components/dynamic/SecondaryLink";
+import GradientLink1 from "@/app/components/dynamic/GradientLink1";
+import GradientLink2 from "@/app/components/dynamic/GradientLink2";
 import ShadowImg from "../components/dynamic/ShadowImg";
 import img from "@/public/imgs/ejp_img_light.jpg";
 
@@ -21,21 +21,44 @@ export default function StartPage() {
         potencialidades del individuo.
       </p>
       <div className="flex justify-center my-10 gap-6">
-        <PrimaryLink href="#">Inscribete</PrimaryLink>
-        <SecondaryLink href="#">Conoce más</SecondaryLink>
+        <GradientLink1
+          href="#"
+          className="grid justify-center items-center"
+          darkcolor="link-primary-dark"
+          lightcolor="link-primary-light"
+        >
+          Inscribete
+        </GradientLink1>
+        <GradientLink2
+          href="#"
+          className="grid justify-center items-center"
+          darkcolor="link-secondary-dark"
+          lightcolor="link-secondary-light"
+        >
+          Conoce más
+        </GradientLink2>
       </div>
       <div className="flex mt-5 justify-center m-10 lg:m-16">
         <ShadowImg
           src={img}
-          imgstyle="rounded-lg w-1/3 border shadow-lg mx-2"
+          alt="imagen 1"
+          width={600}
+          height={800}
+          className="rounded-lg w-1/3 border shadow-lg mx-2"
         />
         <ShadowImg
           src={img}
-          imgstyle="rounded-lg w-1/3 border shadow-lg mx-2"
+          alt="imagen 2"
+          width={600}
+          height={800}
+          className="rounded-lg w-1/3 border shadow-lg mx-2"
         />
         <ShadowImg
           src={img}
-          imgstyle="rounded-lg w-1/3 border shadow-lg mx-2"
+          alt="imagen 3"
+          width={600}
+          height={800}
+          className="rounded-lg w-1/3 border shadow-lg mx-2"
         />
       </div>
       <div className="flex flex-row items-center justify-center mt-6 mx-8 lg:mt-10 space-x-7 lg:m-16">

@@ -25,26 +25,26 @@ body.dark {
 }
 
 @layer components {
-  .btn-primary-dark {
-    @apply py-2 px-2 rounded-md;
+  .link-primary-dark {
+    @apply py-3 px-3 rounded-md;
     background-image: linear-gradient(to right, #6b46c1, #4c1d95);
   }
 
-  .btn-primary-light {
-    @apply py-2 px-2 rounded-md;
+  .link-primary-light {
+    @apply py-3 px-3 rounded-md;
     background-image: linear-gradient(to right, #3b82f6, #1e40af);
   }
 
   /* Botón secundario oscuro (más suave) */
-  .btn-secondary-dark {
-    @apply py-2 px-2 rounded-md;
+  .link-secondary-dark {
+    @apply py-3 px-3 rounded-md;
     background-image: linear-gradient(to right, #2d2f45, #3b3f5e);
     color: #d1d5db;
   }
 
   /* Botón secundario claro (más suave) */
-  .btn-secondary-light {
-    @apply py-2 px-2 rounded-md;
+  .link-secondary-light {
+    @apply py-3 px-3 rounded-md;
     background-image: linear-gradient(to right, #e4e4e7, #d1d5db);
     color: #1f2937;
   }

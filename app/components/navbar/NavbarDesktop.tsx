@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { navItems } from "@/app/constants";
-import PrimaryLink from "../dynamic/PrimaryLink";
-import SecondaryLink from "../dynamic/SecondaryLink";
+import GradientLink1 from "../dynamic/GradientLink1";
+import GradientLink2 from "../dynamic/GradientLink2";
 
 export default function NavbarDesktop() {
   return (
@@ -14,8 +14,22 @@ export default function NavbarDesktop() {
         ))}
       </ul>
       <div className="hidden lg:flex space-x-6">
-        <SecondaryLink href="#">Registrarse</SecondaryLink>
-        <PrimaryLink href="#">Iniciar Sección</PrimaryLink>
+        <GradientLink2
+          href="#"
+          className="grid justify-center items-center"
+          darkcolor="link-secondary-dark"
+          lightcolor="link-secondary-light"
+        >
+          Registrarse
+        </GradientLink2>
+        <GradientLink1
+          href="#"
+          className="grid justify-center items-center"
+          darkcolor="link-primary-dark"
+          lightcolor="link-primary-light"
+        >
+          Iniciar Sección
+        </GradientLink1>
       </div>
     </div>
   );
