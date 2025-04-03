@@ -25,39 +25,56 @@ body.dark {
 }
 
 @layer components {
+
+  /* 🔵 Primario oscuro (se mantiene en tonos morados) */
   .link-primary-dark {
-    @apply py-3 px-3 rounded-md;
+    @apply py-3 px-3 rounded-md transition-all duration-300;
     background-image: linear-gradient(to right, #6b46c1, #4c1d95);
   }
 
-  .link-primary-light {
-    @apply py-3 px-3 rounded-md;
-    background-image: linear-gradient(to right, #3b82f6, #1e40af);
+  .link-primary-dark:hover {
+    background-image: linear-gradient(to right, #7c3aed, #5b21b6);
   }
 
-  /* Botón secundario oscuro (más suave) */
+  /* 🔵 Primario claro (azul menos intenso y más elegante) */
+  .link-primary-light {
+    @apply py-3 px-3 rounded-md transition-all duration-300;
+    background-image: linear-gradient(to right, var(--color-amw-sky), #89b0d9);
+  }
+
+  .link-primary-light:hover {
+    background-image: linear-gradient(to right, #96bede, var(--color-amw-lightblue));
+  }
+
+  /* ⚫ Secundario oscuro */
   .link-secondary-dark {
-    @apply py-3 px-3 rounded-md;
+    @apply py-3 px-3 rounded-md transition-all duration-300;
     background-image: linear-gradient(to right, #2d2f45, #3b3f5e);
     color: #d1d5db;
   }
 
-  /* Botón secundario claro (más suave) */
+  .link-secondary-dark:hover {
+    background-image: linear-gradient(to right, #42455f, #4a4e75);
+    color: #ffffff;
+  }
+
+  /* ⚪ Secundario claro (más limpio y sofisticado) */
   .link-secondary-light {
-    @apply py-3 px-3 rounded-md;
-    background-image: linear-gradient(to right, #e4e4e7, #d1d5db);
+    @apply py-3 px-3 rounded-md transition-all duration-300 text-gray-800;
+    background-image: linear-gradient(to right, var(--color-amw-gray), var(--color-amw-lightgray));
+  }
+
+  .link-secondary-light:hover {
+    background-image: linear-gradient(to right, #e5e1db, #d5d1ca);
     color: #1f2937;
   }
 
+  /* Fondos */
   .bg-dark {
     background-color: var(--color-amw-dark);
   }
 
   .bg-light {
     background-color: var(--color-amw-sky);
-  }
-
-  .hover-primary {
-    @apply hover:bg-gray-500 transition-colors duration-300;
   }
 }
