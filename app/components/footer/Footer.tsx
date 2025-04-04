@@ -1,16 +1,16 @@
 import img1 from "@/public/imgs/footer_dark.svg";
 import img2 from "@/public/imgs/footer_light.svg";
 import DynamicLogos from "../dynamic/DynamicLogos";
-import { resourcesLinks } from "@/app/constants";
+import { footerLinks } from "@/app/constants";
 import { contacts } from "@/app/constants";
 
 export default function Footer() {
   return (
-    <footer className="mt-20 border-t py-10">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
+    <footer className="mt-20 border-t py-10 mq-5">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {/* Brand Section */}
-        <div className="flex flex-col items-center">
-          <div className="grid grid-cols-2 items-center mb-4 justify-center gap-6">
+        <div className="grid grid-cols-2 items-center">
+          <div className="grid grid-cols-2 items-center  justify-center gap-2">
             <DynamicLogos
               properties="h-30 w-30"
               darkImage={img1}
@@ -24,15 +24,15 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Menu Section */}
+        {/* Recursos Section */}
         <div className="flex flex-col items-center w-full">
-          <h3 className="font-bold text-lg mb-3">MENU</h3>
-          <ul className="grid sm:grid-cols-2  lg:grid-cols-3  gap-2 w-full justify-items-center">
-            {resourcesLinks.map((link, index) => (
+          <h3 className="font-bold text-lg mb-3">RECURSOS</h3>
+          <ul className="grid grid-cols-1  md:grid-cols-2 xl:grid-cols-4 gap-2 w-full justify-items-center">
+            {footerLinks.map((link, index) => (
               <li key={index} className="px-1 py-2">
                 <a
                   href={link.href}
-                  className="hover-primary rounded-md px-1 py-2"
+                  className="hover-primary rounded-md px-3 py-3"
                 >
                   {link.text}
                 </a>
@@ -54,18 +54,6 @@ export default function Footer() {
               </li>
             ))}
           </ul>
-        </div>
-
-        {/* Newsletter Section */}
-        <div className="flex flex-col items-center">
-          <h3 className="font-bold text-lg mb-3">BOLETÍN</h3>
-          <div className="flex">
-            <input
-              type="email"
-              placeholder="Tu correo"
-              className="px-4 py-1 w-full  focus:outline-none border-1 "
-            />
-          </div>
         </div>
 
         {/* Social Media Icons */}

@@ -26,7 +26,7 @@ body.dark {
 
 @layer components {
 
-  /* 🔵 Primario oscuro (se mantiene en tonos morados) */
+  /* Primario oscuro*/
   .link-primary-dark {
     @apply py-3 px-3 rounded-md transition-all duration-300;
     background-image: linear-gradient(to right, #6b46c1, #4c1d95);
@@ -36,7 +36,7 @@ body.dark {
     background-image: linear-gradient(to right, #7c3aed, #5b21b6);
   }
 
-  /* 🔵 Primario claro (azul menos intenso y más elegante) */
+  /* Primario claro */
   .link-primary-light {
     @apply py-3 px-3 rounded-md transition-all duration-300;
     background-image: linear-gradient(to right, var(--color-amw-sky), #89b0d9);
@@ -46,7 +46,7 @@ body.dark {
     background-image: linear-gradient(to right, #96bede, var(--color-amw-lightblue));
   }
 
-  /* ⚫ Secundario oscuro */
+  /* Secundario oscuro */
   .link-secondary-dark {
     @apply py-3 px-3 rounded-md transition-all duration-300;
     background-image: linear-gradient(to right, #2d2f45, #3b3f5e);
@@ -56,14 +56,20 @@ body.dark {
     background-image: linear-gradient(to right, #42455f, #4a4e75);
   }
 
-  /* ⚪ Secundario claro (más limpio y sofisticado) */
+  /* Secundario claro */
   .link-secondary-light {
     @apply py-3 px-3 rounded-md transition-all duration-300;
     background-image: linear-gradient(to right, var(--color-amw-gray), var(--color-amw-lightgray));
+
   }
 
   .link-secondary-light:hover {
     background-image: linear-gradient(to right, #e5e1db, #d5d1ca);
+  }
+
+  /* Hover */
+  .hover-primary {
+    @apply hover:bg-gray-500 transition-colors duration-300;
   }
 
   /* Fondos */
@@ -74,4 +80,6 @@ body.dark {
   .bg-light {
     background-color: var(--color-amw-sky);
   }
+
+
 }

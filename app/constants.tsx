@@ -4,13 +4,11 @@ export const navItems = [
   { label: "Consultoría Filosófica", href: "#" },
   { label: "Cursos", href: "#" },
   { label: "Publicaciones", href: "#" },
-  { label: "Contactanos", href: "#" },
 ];
 
-export const resourcesLinks = [
-  { href: "#", text: "Cursos" },
+export const footerLinks = [
   { href: "#", text: "Publicaciones" },
-  { href: "#", text: "Biblioteca" },
+  { href: "#", text: "Contactanos" },
   { href: "#", text: "Formularios" },
   { href: "#", text: "Donaciones" },
 ];

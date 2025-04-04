@@ -1,5 +1,5 @@
 import aboutUsData from "./aboutUsData";
-import GradientWord from "../startpage/GradientWord";
+import GradientWord from "../components/dynamic/GradientWord";
 import ShadowImg from "../components/dynamic/ShadowImg";
 import TextColor from "./TextColors";
 
