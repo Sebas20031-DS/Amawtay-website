@@ -7,7 +7,7 @@ import logoLight from "@/public/imgs/logo_light.svg";
 
 export default function Navbar() {
   return (
-    <nav className="sticky z-50 py-3.5 backdrop-blur-lg border-b">
+    <nav className="sticky z-50 py-3 backdrop-blur-lg border-b">
       <div className="container mx-auto px-3 relative text-sm">
         <div className="flex justify-between items-center">
           {/* Logo y texto */}

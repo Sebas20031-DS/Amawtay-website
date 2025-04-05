@@ -8,7 +8,7 @@ export default function NavbarMobile() {
   return (
     <div className="lg:hidden flex-col justify-center ">
       <MovileToggler
-        className="fixed right-0 z-20 w-full flex flex-col items-center justify-center py-2 mt-5 "
+        className="fixed right-0 z-20 w-full flex flex-col items-center justify-center py-2 mt-3 "
         bgDark="bg-dark"
         bgLight="bg-light"
       >

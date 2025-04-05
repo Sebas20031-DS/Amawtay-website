@@ -6,7 +6,7 @@ import img from "@/public/imgs/ejp_img_light.jpg";
 
 export default function StartPage() {
   return (
-    <div className="flex flex-col items-center justify-center mt-5 lg:mt-10 m-4 lg:m-8">
+    <div className="flex flex-col items-center justify-center mt-5 lg:mt-10 m-8 lg:m-10">
       <h1 className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
         Acerca de <GradientWord>Amawtay</GradientWord>
       </h1>
