@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { useTheme } from "next-themes";
-import { Sun, Moon } from "lucide-react";
+import { FiSun, FiMoon } from "react-icons/fi";
 
 export default function ThemeSwitch() {
   const { resolvedTheme, setTheme } = useTheme();
@@ -23,7 +23,7 @@ export default function ThemeSwitch() {
       aria-label="Toggle theme"
       title={`Switch to ${resolvedTheme === "dark" ? "light" : "dark"} mode`}
     >
-      {resolvedTheme === "dark" ? <Sun size={28} /> : <Moon size={28} />}
+      {resolvedTheme === "dark" ? <FiSun size={28} /> : <FiMoon size={28} />}
     </button>
   );
 }

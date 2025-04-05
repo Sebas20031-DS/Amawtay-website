@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useTheme } from "next-themes";
-import { X, Menu } from "lucide-react";
+import { FiX, FiMenu } from "react-icons/fi";
 import React from "react";
 
 type MovileTogglerProps = {
@@ -27,7 +27,7 @@ export default function MovileToggler({
     <>
       <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2">
         {/* Llamamos a los componentes X y Menu como JSX */}
-        {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
+        {isMenuOpen ? <FiX size={28} /> : <FiMenu size={28} />}
       </button>
 
       {/* Menú móvil que aparece cuando isMenuOpen es verdadero */}
