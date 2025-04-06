@@ -16,9 +16,11 @@ export default function NavbarMobile() {
           {navItems.map((item, index) => (
             <li
               key={index}
-              className="py-3 px-6 hover-primary border-b border-gray-100 "
+              className="py-1 px-1 hover-primary border-b border-gray-100 block"
             >
-              <Link href={item.href}>{item.label}</Link>
+              <Link href={item.href} className="block w-full py-3 px-6">
+                {item.label}
+              </Link>
             </li>
           ))}
         </ul>

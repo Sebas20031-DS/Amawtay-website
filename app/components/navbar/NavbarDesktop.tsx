@@ -8,8 +8,10 @@ export default function NavbarDesktop() {
     <div className="hidden lg:flex ml-14 space-x-10 items-center justify-center">
       <ul className="hidden lg:flex  space-x-10">
         {navItems.map((item, index) => (
-          <li key={index} className="py-3 px-6 hover-primary rounded-lg">
-            <Link href={item.href}>{item.label}</Link>
+          <li key={index} className="hover-primary rounded-lg block">
+            <Link href={item.href} className="block w-full py-2 px-4">
+              {item.label}
+            </Link>
           </li>
         ))}
       </ul>
