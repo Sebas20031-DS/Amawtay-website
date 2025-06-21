@@ -1,7 +1,7 @@
 import aboutUsData from "./aboutUsData";
 import GradientWord from "../components/dynamic/GradientWord";
 import ShadowImg from "../components/dynamic/ShadowImg";
-import TextColor from "./TextColors";
+import TextColor from "../components/dynamic/TextColors";
 
 async function getData() {
   return aboutUsData;
@@ -11,7 +11,7 @@ export default async function AboutUsPage() {
   const data = await getData();
 
   return (
-    <div className="mt-5 lg:mt-10 m-8 lg:m-10text-center">
+    <div className="mt-5 lg:mt-10 m-8 lg:m-10 text-center">
       <h1 className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
         <GradientWord> Consultores </GradientWord>
       </h1>

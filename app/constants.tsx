@@ -1,8 +1,7 @@
 export const navItems = [
   { label: "Inicio", href: "/" },
-  { label: "Acerca de nosotros", href: "/about-us" },
-  { label: "Consultoría Filosófica", href: "#" },
-  { label: "Cursos", href: "#" },
+  { label: "Que hacemos?", href: "/products" },
+  { label: "Consultores", href: "/consultors" },
   { label: "Publicaciones", href: "#" },
 ];
 

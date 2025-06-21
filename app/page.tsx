@@ -2,7 +2,8 @@ import GradientWord from "./components/dynamic/GradientWord";
 import GradientLink1 from "@/app/components/dynamic/GradientLink1";
 import GradientLink2 from "@/app/components/dynamic/GradientLink2";
 import ShadowImg from "./components/dynamic/ShadowImg";
-import img from "@/public/imgs/ejp_img_light.jpg";
+import img1 from "@/public/imgs/start/gp3.avif";
+import img2 from "@/public/imgs/start/gp2.avif";
 
 export default function StartPage() {
   return (
@@ -10,7 +11,8 @@ export default function StartPage() {
       <h1 className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
         Acerca de <GradientWord>Amawtay</GradientWord>
       </h1>
-      <p className={"mt-10 text-lg text-center max-w-4xl"}>
+
+      <p className="mt-10 text-lg text-center max-w-4xl">
         El colectivo Amawtay concibe a la filosofía como un medio efectivo para
         ejercitar y ampliar el pensamiento, para hacer altos en el camino y
         redefinir rumbos, así como cuestionarse acerca de lo que somos y
@@ -20,49 +22,48 @@ export default function StartPage() {
         confrontación del sí mismo, expansión y desarrollo de las
         potencialidades del individuo.
       </p>
-      <div className="flex justify-center my-10 gap-6">
+
+      {/* Botones */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 my-10 w-full max-w-md">
         <GradientLink1
           href="#"
-          className="grid justify-center items-center"
+          className="w-full py-3 text-center"
           darkcolor="link-primary-dark"
           lightcolor="link-primary-light"
         >
-          Inscribete
+          Agendar Consulta
         </GradientLink1>
         <GradientLink2
           href="#"
-          className="grid justify-center items-center"
+          className="w-full py-3 text-center"
           darkcolor="link-secondary-dark"
           lightcolor="link-secondary-light"
         >
-          Conoce más
+          Colabora con nosotros
         </GradientLink2>
       </div>
-      <div className="flex mt-5 justify-center m-10 lg:m-16">
+
+      {/* Imágenes */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 m-8 lg:m-14 w-full max-w-6xl">
         <ShadowImg
-          src={img}
+          src={img1}
           alt="imagen 1"
           width={600}
           height={800}
-          className="rounded-lg w-1/3 border shadow-lg mx-2"
+          className="rounded-lg w-full h-auto max-h-[400px] border shadow-lg"
         />
         <ShadowImg
-          src={img}
+          src={img2}
           alt="imagen 2"
           width={600}
           height={800}
-          className="rounded-lg w-1/3 border shadow-lg mx-2"
-        />
-        <ShadowImg
-          src={img}
-          alt="imagen 3"
-          width={600}
-          height={800}
-          className="rounded-lg w-1/3 border shadow-lg mx-2"
+          className="rounded-lg w-full h-auto max-h-[400px]  border shadow-lg"
         />
       </div>
-      <div className="flex flex-row items-center justify-center mt-6 mx-8 lg:mt-10 space-x-7 lg:m-16">
-        <div className="p-3 rounded-lg shadow-lg text-center">
+
+      {/* Misión y Visión */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6 lg:mt-10 mx-auto w-full max-w-6xl px-4">
+        <div className="p-6 rounded-lg shadow-lg text-center h-full flex flex-col justify-start">
           <h3 className="text-4xl lg:text-6xl tracking-wide">
             <GradientWord>Misión</GradientWord>
           </h3>
@@ -75,7 +76,7 @@ export default function StartPage() {
           </p>
         </div>
 
-        <div className="p-3 rounded-lg shadow-lg text-center">
+        <div className="p-6 rounded-lg shadow-lg text-center h-full flex flex-col justify-start">
           <h3 className="text-4xl lg:text-6xl tracking-wide">
             <GradientWord>Visión</GradientWord>
           </h3>
