@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Amawtay - Sitio Web Oficial
 
-## Getting Started
+Bienvenido al repositorio del **sitio web oficial de Amawtay**, un centro autónomo de filosofía latinoamericana. Este proyecto está desarrollado con [Next.js](https://nextjs.org/) y tiene como objetivo difundir la filosofía, acercando el debate filosófico a la sociedad y promoviendo la formación de sujetos críticos y comprometidos con el buen vivir.
 
-First, run the development server:
+## 🌐 Sitio en producción
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Puedes visitar el sitio en:  
+[https://amawtay-website.vercel.app](https://amawtay-website.vercel.app)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ¿Qué es Amawtay?
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Amawtay es un colectivo conformado por filósofos y filósofas que colaboran para fomentar la filosofía en la sociedad latinoamericana. Buscamos desafiar la rigidez de las fronteras académicas y acercar la reflexión filosófica a públicos más amplios, promoviendo el pensamiento crítico y la transformación social.
 
-## Learn More
+### Misión
 
-To learn more about Next.js, take a look at the following resources:
+Acercar los temas de debate filosófico a audiencias más amplias, desafiando la rigidez de la filosofía académica y fomentando la reflexión crítica en la sociedad.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Visión
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Ser una institución referente en la producción y difusión filosófica latinoamericana, participando activamente en la formación de sujetos y procesos sociales orientados al buen vivir.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Características del sitio
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Desarrollado con Next.js** y React.
+- Diseño responsivo y moderno.
+- Soporte para modo claro y oscuro.
+- Secciones informativas sobre el colectivo, consultores, publicaciones y formas de colaboración.
+- Integración con TailwindCSS para estilos personalizados.
+
+---
+
+## Instalación y desarrollo local
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/amawtay-website.git
+   cd amawtay-website
